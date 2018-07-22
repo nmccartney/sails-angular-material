@@ -1,2 +1,4 @@
-
-div[fxLayoutAlign] { padding:10px;}
+.mat-form-field{
+    display: block;
+    width: 100%;
+}

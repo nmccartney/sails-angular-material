@@ -20,6 +20,7 @@
     "@sailshq/upgrade": "^1.0.9",
     "angular-in-memory-web-api": "~0.5.1",
     "async": "2.1.4",
+    "bootstrap": "^4.1.2",
     "core-js": "^2.4.1",
     "ejs": "2.5.7",
     "es6-promise": "^4.1.1",

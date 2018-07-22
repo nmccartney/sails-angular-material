@@ -1,26 +1,35 @@
-<mat-toolbar>
-    <span>Sails + Angular 5 Starter App</span>
-</mat-toolbar>
 
-<div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="10px">
-    <mat-card>
-        <div class="containerX">
-            <div fxLayout="row" fxFlex class="coloredContainerX box">
-                <div fxFlex.gt-sm="67" fxFlex="33">
-                    <h1>Welcome to Sails & Material</h1>
-                </div>
-                <div fxFlex.gt-sm="33" fxFlex="67">
+<div class="container">
+    <div class="row">
+        <div class="col-7">
+            <h1>Welcome to Sails & Material</h1>
+        </div>
+        <div class="col">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>Title</mat-card-title>
+                    <mat-card-subtitle>Subtitle</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
                     <mat-form-field>
                         <mat-placeholder>Username</mat-placeholder>
-                        <input matInput type="text">
+                        <input matInput 
+                                [(ngModel)]="user"
+                                type="text"
+                                required>
+                        <span matSuffix>phone</span>
                     </mat-form-field>
 
                     <mat-form-field>
                         <mat-placeholder>Password</mat-placeholder>
-                        <input matInput type="password">
+                        <input matInput 
+                            [(ngModel)]="password"
+                            type="password"
+                            required>
                     </mat-form-field>
-                </div>
-            </div>
+                </mat-card-content>
+            </mat-card>
+
         </div>
-    </mat-card>
+    </div>
 </div>
